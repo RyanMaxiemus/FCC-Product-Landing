@@ -1,0 +1,20 @@
+body{
+}
+#header-img {
+  width: 15vh;
+}
+
+#page-landing {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 85%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(120, 63, 174, 0.9), rgba(89, 134, 232, 0.9)), 
+    url(https://static-assets.strikinglycdn.com/images/landing4/spread.jpg);
+  /* Create triangle on bottom of div */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
