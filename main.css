@@ -16,6 +16,7 @@ body{
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), 
     url(https://www.cyberpunk.net/build/images/home/cover-1920-en-527c5659.jpg);
   /* Create triangle on bottom of div */
