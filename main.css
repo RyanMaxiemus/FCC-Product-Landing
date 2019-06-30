@@ -5,12 +5,19 @@ body{
   text-align: center;
 }
 #header-img {
-  width: 15vh;
+  width: 17vh;
+}
+.navbar {
+  background-color: rgb(250, 240, 2);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 .nav-link {
   font-size: 2.5vh;
   color: white;
   margin: 0 20px;
+}
+.nav-link:hover {
+  color: rgb(2, 216, 243);
 }
 #page-landing {
   height: 100vh;
@@ -23,27 +30,26 @@ body{
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
 }
-#title-img {
-  display: block;
-  margin-top: 150px;
-  margin-left: 53vw;
-  margin-right: auto;
-  width: 45vw;
-  height: auto;
-}
-/* Features Section */
-#features {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* Large Screens */
 @media only screen and (min-width: 1300px) {
-  .feature-container {
-    float: left;
-    margin: 3vw;
+  #title-img {
     position: relative;
-    text-align: center;
+    top: 225px;
+    margin-left: 53vw;
+    width: 45vw;
+    height: auto;
+  }
+  #features {
+    display: flex;
+    justify-content: space-around;
+  }
+  .feature-container {
+    margin: 3vw;
+  }
+  .section-title {
+    margin-top: 3vw;
+    color: rgb(2, 216, 243);
+    font-size: 50px;
   }
   figcaption {
     width: 350px;
@@ -56,14 +62,17 @@ body{
     heigth: auto;
   }
   .feature-text {
-    position: absolute;
+    position: relative;
     width: 295px;
     padding-top: 10px;
     padding-bottom: 10px;
-    bottom: 110px;
+    bottom: 180px;
     left: 100px;
     line-height: 30px;
     background-color: rgb(250, 240, 2);
+  }
+  #immortality-text {
+    bottom: 210px;
   }
   .feature-text p {
     margin-top: auto;
@@ -71,13 +80,37 @@ body{
     font-size: 25px;
     font-weight: bold;
   }
+  .video {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 75vw;
+    height: 42vw;
+  }
 }
 /* Medium Screens */
 @media only screen and (min-width: 955px) and (max-width: 1300px) {
+  #features {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #title-img {
+    position: relative;
+    top: 225px;
+    margin-left: 53vw;
+    margin-right: auto;
+    width: 45vw;
+    height: auto;
+  }
   .feature-container {
     margin: 60px;
     position: relative;
     text-align: center;
+  }
+  .section-title {
+    margin-top: 60px;
+    color: rgb(2, 216, 243);
+    font-size: 50px;
   }
   figcaption {
     width: 350px;
@@ -105,14 +138,14 @@ body{
     width: 295px;
     padding-top: 10px;
     padding-bottom: 10px;
-    bottom: 110px;
+    bottom: 100px;
     left: 100px;
     line-height: 30px;
     background-color: rgb(250, 240, 2);
   }
   #immortality-text {
     left: 330px;
-    bottom: 100px;
+    bottom: 90px;
   }
   .feature-text p {
     margin-top: auto;
@@ -120,13 +153,37 @@ body{
     font-size: 25px;
     font-weight: bold;
   }
+  .video {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 75vw;
+    height: 42vw;
+  }
 }
 /* Small Screens */
 @media only screen and (max-width: 955px) {
+  #features {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #title-img {
+    position: relative;
+    top: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: auto;
+  }
   .feature-container {
     margin: 3vw;
     position: relative;
     text-align: center;
+  }
+  .section-title {
+    margin-top: 1vh;
+    color: rgb(2, 216, 243);
+    font-size: 50px;
   }
   figcaption {
     width: 350px;
@@ -154,4 +211,14 @@ body{
     font-size: 25px;
     font-weight: bold;
   }
+  .video {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 75vw;
+    height: 42vw;
+  }
+}
+.border-img {
+  transform: rotate(180deg);
+  width: 100%;
 }
