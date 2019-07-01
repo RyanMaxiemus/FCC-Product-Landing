@@ -1,93 +1,177 @@
 <head>
-    <!-- Script for site's JavaScript -->
-<script src="/resources/js/main.js"></script>
-<!-- Script for jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Scripts for Navbar -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+
+  <!-- Styles for site-->
+  <link rel="stylesheet" href="/resources/css/main.css" />
+
+  <!-- jQuery Library-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper Library-->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Bootstrap 4 Library-->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Script for site's JavaScript -->
+  <script src="/resources/js/main.js"></script>
 </head>
 <body>
-<!-- Beginning of Page -->
-<div id="page-container">
+  <!-- Beginning of Page -->
+  <div id="page-container">
     <header id="header">
       <!-- Navigation Bar -->
       <nav id="nav-bar" class="navbar fixed-top navbar-expand-md">
         <!-- Logo -->
-        <a href="https://cdprojektred.com/" target="_blank" class="navbar-brand">
-          <img id="header-img" src="https://www.cyberpunk.net/build/images/CDProjektRed-Black-de028e26.svg">
+        <a
+          href="https://cdprojektred.com/"
+          target="_blank"
+          class="navbar-brand"
+        >
+          <img
+            id="header-img"
+            src="https://www.cyberpunk.net/build/images/CDProjektRed-Black-de028e26.svg"
+          />
         </a>
         <!-- Button While Collapsed -->
-        <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          type="button"
+          class="navbar-toggler navbar-dark"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-                <a href="#features" class="nav-item nav-link ml-auto">Features</a>
-                <a href="#trailer" class="nav-item nav-link ml-auto">Trailer</a>
-                <a href="#form" class="nav-item nav-link ml-auto">Newsletter</a>
-            </div>
+          <div class="navbar-nav ml-auto">
+            <a id="features-link" href="#" class="nav-item nav-link ml-auto"
+              >Features</a
+            >
+            <a id="trailer-link" href="#" class="nav-item nav-link ml-auto"
+              >Trailer</a
+            >
+            <a id="form-link" href="#" class="nav-item nav-link ml-auto"
+              >Newsletter</a
+            >
+          </div>
         </div>
-      </nav> <!-- End of Navigation Bar -->
+      </nav>
+      <!-- End of Navigation Bar -->
     </header>
-  <div id="page-landing">
-    <img id="title-img" src="https://i.dlpng.com/static/png/196627_preview.png">
+    <div id="page-landing">
+      <img
+        id="title-img"
+        src="https://i.dlpng.com/static/png/196627_preview.png"
+      />
+    </div>
+    <!-- Features -->
+    <h1 id="features-title" class="section-title">Features</h1>
+    <div id="features">
+      <div class="feature-container" id="mercenary">
+        <figure>
+          <img
+            class="feature-img"
+            src="https://www.cyberpunk.net/build/images/home/feature-image-01@2x-0e1d71a4.jpg"
+          />
+          <figcaption>
+            <p>
+              Become a cyberpunk, an urban mercenary equipped with cybernetic
+              enhancements and build your legend on the streets of Night City.
+            </p>
+          </figcaption>
+        </figure>
+        <div class="feature-text">
+          <p>PLAY AS A MERCENARY OUTLAW</p>
+        </div>
+      </div>
+      <div class="feature-container" id="future">
+        <figure>
+          <img
+            class="feature-img"
+            src="https://www.cyberpunk.net/build/images/home/feature-image-02@2x-5b295625.jpg"
+          />
+          <figcaption>
+            <p>
+              Enter the massive open world of Night City, a place that sets new
+              standards in terms of visuals, complexity and depth.
+            </p>
+          </figcaption>
+        </figure>
+        <div class="feature-text">
+          <p>LIVE IN THE CITY OF THE FUTURE</p>
+        </div>
+      </div>
+      <div class="feature-container">
+        <figure>
+          <img
+            class="feature-img"
+            src="https://www.cyberpunk.net/build/images/home/feature-image-03@2x-8c4c67cc.jpg"
+          />
+          <figcaption id="immortality-caption">
+            <p>
+              Enter the massive open world of Night City, a place that sets new
+              standards in terms of visuals, complexity and depth.
+            </p>
+          </figcaption>
+        </figure>
+        <div class="feature-text" id="immortality-text">
+          <p>STEAL THE IMPLANT THAT GRANTS ETERNAL LIFE</p>
+        </div>
+      </div>
+    </div>
+    <!-- End of Features Section -->
+    <img
+      class="border-img"
+      src="https://www.cyberpunk.net/build/images/home/bg-newsletter-1920-1112def9.jpg"
+    />
+    <!-- Beginning of Trailer Section -->
+    <div id="trailer">
+      <h1 class="section-title">Trailer</h1>
+      <iframe
+        id="video"
+        class="video"
+        src="https://www.youtube.com/embed/LembwKDo1Dk"
+        frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- End of Trailer Section -->
+    <img
+      class="border-img"
+      src="https://www.cyberpunk.net/build/images/home/bg-newsletter-1920-1112def9.jpg"
+    />
+    <!-- Beginning of Form Section -->
+    <div>
+      <p id="form-description">Signup for the Cyberpunk 2077 newsletter.</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter email here..."
+          required
+        />
+        <br />
+        <input id="submit" type="submit" />
+      </form>
+    </div>
+    <!-- End of Form Section -->
   </div>
-  <!-- Features -->
-  <h1 id="features-title" class="section-title">Features</h1>
-  <div id="features">
-    <div class="feature-container" id="mercenary">
-      <figure>
-      <img class="feature-img" src="https://www.cyberpunk.net/build/images/home/feature-image-01@2x-0e1d71a4.jpg">
-        <figcaption>
-          <p>Become a cyberpunk, an urban mercenary equipped with cybernetic enhancements and build your legend on the streets of Night City.</p>
-        </figcaption>
-      </figure>
-      <div class="feature-text">
-        <p>PLAY AS A MERCENARY OUTLAW</p>
-      </div>
-    </div>
-    <div class="feature-container" id="future">
-      <figure>
-        <img class="feature-img" src="https://www.cyberpunk.net/build/images/home/feature-image-02@2x-5b295625.jpg">
-        <figcaption>
-          <p>Enter the massive open world of Night City, a place that sets new standards in terms of visuals, complexity and depth.</p>
-        </figcaption>
-      </figure>
-      <div class="feature-text">
-        <p>LIVE IN THE CITY OF THE FUTURE</p>
-      </div>
-    </div>
-    <div class="feature-container">
-      <figure>
-        <img class="feature-img" src="https://www.cyberpunk.net/build/images/home/feature-image-03@2x-8c4c67cc.jpg">
-        <figcaption id="immortality-caption">
-          <p>Enter the massive open world of Night City, a place that sets new standards in terms of visuals, complexity and depth.</p>
-        </figcaption>
-      </figure>
-      <div class="feature-text" id="immortality-text">
-        <p>STEAL THE IMPLANT THAT GRANTS ETERNAL LIFE</p>
-      </div>
-    </div>
-  </div> <!-- End of Features Section -->
-  <img class="border-img" src="https://www.cyberpunk.net/build/images/home/bg-newsletter-1920-1112def9.jpg">
-  <!-- Beginning of Trailer Section -->
-  <div id="trailer">
-    <h1 class="section-title">Trailer</h1>
-    <iframe id="video" class="video" src="https://www.youtube.com/embed/LembwKDo1Dk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div> <!-- End of Trailer Section -->
-  <img class="border-img" src="https://www.cyberpunk.net/build/images/home/bg-newsletter-1920-1112def9.jpg">
-  <!-- Beginning of Form Section -->
-  <div>
-    <p id="form-description">Signup for the Cyberpunk 2077 newsletter.</p>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <label for="email">Email:</label>
-      <input id="email" name="email" type="email" placeholder="Enter email here..." required>
-      <br>
-      <input id="submit" type="submit">
-    </form>
-  </div> <!-- End of Form Section -->
-</div>
 </body>

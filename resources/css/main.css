@@ -1,4 +1,4 @@
-body{
+body {
   background-color: black;
 }
 #page-container {
@@ -9,7 +9,11 @@ body{
 }
 #nav-bar {
   background-color: rgb(250, 240, 2);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.7)
+  );
 }
 .nav-link {
   font-size: 2.5vh;
@@ -24,8 +28,12 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), 
-    url(https://www.cyberpunk.net/build/images/home/cover-1920-en-527c5659.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://10images.cgames.de/images/gsgp/279/cyberpunk-2077_6068829.jpg);
   /* Create triangle on bottom of div */
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
@@ -59,7 +67,6 @@ body{
   }
   .feature-img {
     width: 350px;
-    heigth: auto;
   }
   .feature-text {
     position: relative;
@@ -131,7 +138,6 @@ body{
   }
   .feature-img {
     width: 350px;
-    heigth: auto;
   }
   .feature-text {
     position: absolute;
@@ -193,7 +199,6 @@ body{
   }
   .feature-img {
     width: 350px;
-    heigth: auto;
   }
   .feature-text {
     position: absolute;
